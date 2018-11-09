@@ -79,7 +79,7 @@ def visualizeClassifier(model, X, y, ax=None, cmap='rainbow'):
                            zorder=1)
 
     ax.set(xlim=xlim, ylim=ylim) 
-'''
+
 ######			PCA			#####
 Digits = load_digits()
 seaborn.set()
@@ -185,7 +185,7 @@ data = Digits.data[Digits.target == 1][:]
 fig, ax = matplotlib.pyplot.subplots(figsize=(10, 10))
 model = Isomap(n_neighbors=5, n_components=2, eigen_solver='dense')
 plotComponents(data, model, images=data.reshape((-1, 8, 8)), ax=ax, thumb_frac=0.05, cmap='gray_r')
-'''         
+         
 
 ######   	Random Forrests				#####
 Digits = load_digits()
